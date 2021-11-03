@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Italbytz.Infrastructure.STW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Italbytz.Infrastructure.STWPB.Tests", "Italbytz.Infrastructure.STWPB.Tests\Italbytz.Infrastructure.STWPB.Tests.csproj", "{44F2518A-D77C-4F8F-83F3-F7F1379ADABA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C58B083D-3A29-4AA6-8BDF-638B57C6DE44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

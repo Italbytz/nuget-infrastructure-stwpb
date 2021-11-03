@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using NUnit.Framework;
 
 namespace Italbytz.Infrastructure.STWPB.Tests
@@ -6,11 +7,14 @@ namespace Italbytz.Infrastructure.STWPB.Tests
     public class Tests
     {
         MensaAPI api;
+        string secret;
 
         [SetUp]
         public void Setup()
         {
-            api = new MensaAPI(Secret.id,"de");
+            secret = Environment.GetEnvironmentVariable("SECRET_STWPB");
+            Assert.NotNull(secret);
+            api = new MensaAPI(secret, "de");
         }
 
         [Test]
