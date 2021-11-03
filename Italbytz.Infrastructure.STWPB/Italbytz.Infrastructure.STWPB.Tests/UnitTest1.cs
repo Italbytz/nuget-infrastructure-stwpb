@@ -13,13 +13,13 @@ namespace Italbytz.Infrastructure.STWPB.Tests
         public void Setup()
         {
             secret = Environment.GetEnvironmentVariable("SECRET_STWPB");
-            Assert.NotNull(secret);
-            api = new MensaAPI(secret, "de");
+            Assert.NotNull(secret);            
         }
 
         [Test]
-        public async Task TestGetMeals()
+        public async Task TestGetMealsDE()
         {
+            api = new MensaAPI(secret, "de");
             try
             {                
                 var meals = await api.GetMeals();
@@ -32,10 +32,40 @@ namespace Italbytz.Infrastructure.STWPB.Tests
         }
 
         [Test]
-        public async Task TestGetTodaysHammMeals()
+        public async Task TestGetTodaysHammMealsDE()
         {
+            api = new MensaAPI(secret, "de");
             try
             {                
+                var meals = await api.GetTodaysHammMeals();
+            }
+            catch (System.Exception ex)
+            {
+                Assert.Fail(ex.Message);
+            }
+        }
+
+        [Test]
+        public async Task TestGetMealsEN()
+        {
+            api = new MensaAPI(secret, "en");
+            try
+            {
+                var meals = await api.GetMeals();
+                Assert.IsTrue(meals.Count > 0);
+            }
+            catch (System.Exception ex)
+            {
+                Assert.Fail(ex.Message);
+            }
+        }
+
+        [Test]
+        public async Task TestGetTodaysHammMealsEN()
+        {
+            api = new MensaAPI(secret, "en");
+            try
+            {
                 var meals = await api.GetTodaysHammMeals();
             }
             catch (System.Exception ex)

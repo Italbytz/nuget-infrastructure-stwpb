@@ -145,7 +145,8 @@ namespace Italbytz.Infrastructure.STWPB
         Dish,
         Empty,
         [EnumMember(Value = "Side Dish")]
-        SideDish };
+        SideDish,
+        Soups };
 
     public enum Pricetype { Fixed, Weighted };
 
