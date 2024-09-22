@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0;netstandard2.1;net7.0;net8.0;net9.0</TargetFrameworks>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net8.0;net9.0</TargetFrameworks>
 		<Nullable>enable</Nullable>
 		<PackOnBuild>true</PackOnBuild>
-		<PackageVersion>9.0.0</PackageVersion>
+		<PackageVersion>9.0.0-rc.1</PackageVersion>
 		<Authors>Robin Nunkesser</Authors>
-		<PackageLicenseUrl>https://github.com/Italbytz/nuget-infrastructure-stwpb/blob/main/LICENSE</PackageLicenseUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>introduction.md</PackageReadmeFile>
 		<Owners>Robin Nunkesser</Owners>
 		<PackageProjectUrl>https://github.com/Italbytz/nuget-infrastructure-stwpb</PackageProjectUrl>
 		<Description>Basic methods to access the STWPB mensa plans.</Description>
@@ -28,5 +29,8 @@
 		<PackageReference Include="System.Text.Json" Version="9.0.0-rc.1.24431.7" />
 		<PackageReference Include="System.Net.Http.Json" Version="9.0.0-rc.1.24431.7" />
 		<PackageReference Include="Macross.Json.Extensions" Version="3.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="introduction.md" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 </Project>
