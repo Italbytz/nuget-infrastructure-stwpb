@@ -13,7 +13,7 @@ namespace Italbytz.Infrastructure.STWPB.Tests
         public void Setup()
         {
             secret = Environment.GetEnvironmentVariable("SECRET_STWPB");
-            Assert.NotNull(secret);            
+            Assert.NotNull(secret);             
         }
 
         [Test]
