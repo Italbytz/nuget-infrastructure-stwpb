@@ -163,7 +163,9 @@ namespace Italbytz.Infrastructure.STWPB
         [EnumMember(Value = "one-way-snack")]
         OneWaySnack,
         [EnumMember(Value = "zm2")]
-        ZM2
+        ZM2,
+        [EnumMember(Value = "grill-cafe")]
+        GrillCafe
     };
 
     public static class Serialize

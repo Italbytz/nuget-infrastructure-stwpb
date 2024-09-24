@@ -4,7 +4,7 @@
 		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
 		<Nullable>enable</Nullable>
 		<PackOnBuild>true</PackOnBuild>
-		<PackageVersion>9.0.0-rc.1.1</PackageVersion>
+		<PackageVersion>9.0.0-rc.1.2</PackageVersion>
 		<Authors>Robin Nunkesser</Authors>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>introduction.md</PackageReadmeFile>
