@@ -5,10 +5,3 @@
 ## See Also
 
 This package has been superseded by [`nuget-meal`](https://github.com/italbytz/nuget-meal).
-
-## See Also
-
-This package has been superseded by **[`nuget-foundation`](https://github.com/italbytz/nuget-foundation)**.
-
-
-
